@@ -81,3 +81,9 @@ function createAbbreviation(phrase) {
 }
 console.log(createAbbreviation('cascading style sheets'));
 console.log(createAbbreviation('об’єктно-орієнтоване програмування'));
+
+
+function concatenateStrings(...strings) {
+  return strings.join('');
+}
+console.log(concatenateStrings('Hello', ' ', 'world', '!'));
