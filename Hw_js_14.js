@@ -64,4 +64,11 @@ function transformString(string) {
   let newResult = transformString(string);
   alert(newResult);
   
-  
+  function convertToCamelCase(cssStyle) {
+    return cssStyle.replace(/-([a-z])/g, function(match, letter) {
+      return letter.toUpperCase();
+    });
+  }
+  console.log(convertToCamelCase('font-size'));
+console.log(convertToCamelCase('background-color'));
+console.log(convertToCamelCase('text-align'));
