@@ -86,4 +86,4 @@ console.log(createAbbreviation('об’єктно-орієнтоване про�
 function concatenateStrings(...strings) {
   return strings.join('');
 }
-console.log(concatenateStrings('Hello', ' ', 'world', '!'));
+console.log(concatenateStrings('Hello', 'all', ' ', 'world', '!'));
