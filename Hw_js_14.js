@@ -72,3 +72,12 @@ function transformString(string) {
   console.log(convertToCamelCase('font-size'));
 console.log(convertToCamelCase('background-color'));
 console.log(convertToCamelCase('text-align'));
+
+
+function createAbbreviation(phrase) {
+  const words = phrase.split(' ');
+  const abbreviation = words.map(word => word.charAt(0).toUpperCase()).join('');
+  return abbreviation;
+}
+console.log(createAbbreviation('cascading style sheets'));
+console.log(createAbbreviation('об’єктно-орієнтоване програмування'));
