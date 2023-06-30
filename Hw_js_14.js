@@ -118,3 +118,17 @@ function calculator(expression) {
 const expression = "5+4";
 const result = calculator(expression);
 console.log(result);
+
+
+function parseURL(url) {
+  const parsedURL = new URL(url);
+
+  const protocol = parsedURL.protocol;
+  const domain = parsedURL.hostname;
+  const path = parsedURL.pathname;
+
+  console.log(`протокол: ${protocol}, домен: ${domain}, шлях: ${path}`);
+}
+
+const url = "https://itstep.org/ua/about";
+parseURL(url);
