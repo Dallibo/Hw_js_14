@@ -127,7 +127,7 @@ function parseURL(url) {
   const domain = parsedURL.hostname;
   const path = parsedURL.pathname;
 
-  console.log(`протокол: ${protocol}, домен: ${domain}, шлях: ${path}`);
+  console.log(`протокол: ${protocol}, домен: ${domain}, путь: ${path}`);
 }
 
 const url = "https://itstep.org/ua/about";
