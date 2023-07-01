@@ -132,3 +132,22 @@ function parseURL(url) {
 
 const url = "https://itstep.org/ua/about";
 parseURL(url);
+
+function customSplit(string, delimiter) {
+  var substrings = [];
+  var start = 0;
+  var end = 0;
+  while (end < string.length) {
+    if (string.charAt(end) === delimiter) {
+      substrings.push(string.substring(start, end));
+      start = end + 1;
+    }
+    end++;
+  }
+  substrings.push(string.substring(start, end));
+  return substrings;
+}
+var string1 = "10/08/2020";
+var delimiter = "/";
+var result1 = customSplit(string1, delimiter);
+console.log(result1);
